@@ -71,7 +71,7 @@ class UserController extends Controller
             $request->validate([
                 'name' => 'required|min:3|max:45|string',
                 'email' => ['required','email',Rule::unique('users')->ignore($user)],
-                'password' => 'required',
+                'password' => 'nullable',
                 'rol_id' => 'required'
             ]);
             $user->update($request->all());

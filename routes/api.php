@@ -11,6 +11,7 @@ Route::apiResource('/rol',RolController::class);
 Route::apiResource('/user',UserController::class);
 Route::apiResource('/comment',CommentController::class);
 Route::apiResource('/article',ArticleController::class);
+Route::post('article/actualizar/{id}',[ArticleController::class,'actualizar']);
 
 
 /*Route::get('/user', function (Request $request) {
