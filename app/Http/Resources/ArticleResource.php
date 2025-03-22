@@ -21,6 +21,7 @@ class ArticleResource extends JsonResource
             'texto' => $this->texto,
             'user_id' => $this->user_id,
             'user' => $this->user,
+            'comments' => $this->comments,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
